@@ -107,11 +107,70 @@ li {
   Header styling starts here
 =================================*/
 
+header {
+  color: #fff;
+  background-color: #1E202B;
+  padding: 30px 0;
+}
 
+header .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.brand {
+  flex-basis: 30%;
+}
+.brand a{
+  display: flex;
+  color: #fff;
+}
 
+.brand a figure {
+  /* flex-basis: 30%; */
+  max-width: 200px;
+  padding-right: 10px;
+}
 
+.brand-name {
+  display: flex;
+  flex-flow: column;
+  font-weight: 600;
+}
 
+.brand-name .subtext {
+  margin-top: 5px;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+nav a {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+nav li a:hover {
+  color: #009AD8;
+}
+
+li.active a{
+  color: #009AD8;
+  border: 1px solid #009AD8;
+}
+
+li.active a:hover{
+  color: #fff;
+  border: 1px solid #fff;
+}
 /*=================================
   Header styling ends here
 =================================*/  
