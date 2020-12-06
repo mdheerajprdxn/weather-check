@@ -404,6 +404,83 @@ ul.results>li {
 .info-item-content a {
   color: #aaa;
 }
+
+/* Extra */
+
+.extra {
+  padding: 70px 0;
+  background-color: #1E202B;
+  color: #ccc;
+}
+
+.extra .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra h2 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.extra .wrapper > * {
+  flex-basis: 30%;
+}
+
+.features {
+  font-size: 14px;
+}
+.features h3 {
+  color: #fff;
+  margin: 20px 0;
+  /* font-size: 16px; */
+  font-weight: 600;
+  position: relative;
+}
+
+.analysis {
+  display: flex;
+  flex-flow: column;
+}
+.analysis li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+
+}
+
+
+.features h3:before,
+.analysis  li a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  transform: translateX(-100%);
+  /* transform: translateY(250%); */
+  height: 20px;
+  background: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+
+.analysis li a{
+  font-size: 14px;
+  display: flex;
+  position: relative;
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: #ddd;
+}
+
+
+.analysis li a:hover {
+  color: #fff;
+}
+
 /*=================================
   main styling ends here
 =================================*/
