@@ -184,10 +184,6 @@ li.active a:hover{
   background: linear-gradient(45deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/featured-image-1@2x.jpg');
 }
 
-.hero .wrapper {
-  /* display: flex;
-  flex-flow: column; */
-}
 .search-form {
   background-color: #1e202b;
   padding: 5px;
@@ -297,6 +293,12 @@ ul.results>li {
 }
 .result-bottom li img {
   width: 25px;
+}
+
+/* Live Cameras */
+
+.city-cam img{
+  width: auto;
 }
 
 /*=================================
