@@ -5,8 +5,8 @@
 
 <head>
 
-  <meta charset="utf-8">
-
+  <!-- <meta charset="utf-8"> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Weather App</title>
 
   <meta name="description" lang="en" content="">
@@ -63,24 +63,26 @@
         <div class="wrapper">
           <form action="./index.html" class="search-form">
             <div class="form-element">
-              <input type="text" name="search" id="search">
+              <input type="text" name="search" id="search" placeholder="Find your location..">
             </div>
             <button type="submit">Find</button>
           </form>
-          <ul>
+          <ul class="results">
             <li class="result-top"> <span class="day"> Monday</span> <span class="date">6 Oct</span> </li>
             <li class="city">Mumbai</li>
-            <li class="temprature">23C <img src="assets/images/icons/icon-1.svg" alt="Weather Icon"> </li>
+            <li class="temprature">23&#xb0;C <figure><img src="assets/images/icons/icon-1.svg" alt="Weather Icon">
+              </figure>
+            </li>
             <li class="result-bottom">
               <ul>
                 <li class="rain">
-                  <img src="assets/images/icon-umberella.png" alt="Rain Icon">
+                  <img src="assets/images/icon-umberella.png" alt="Rain Icon"> 20%
                 </li>
                 <li class="wind">
-                  <img src="assets/images/icon-wind.png" alt="Wind Icon">
+                  <img src="assets/images/icon-wind.png" alt="Wind Icon"> 18km/hr
                 </li>
                 <li class="direction">
-                  <img src="assets/images/icon-compass.png" alt="Compass Icon">
+                  <img src="assets/images/icon-compass.png" alt="Compass Icon"> East
                 </li>
               </ul>
             </li>
