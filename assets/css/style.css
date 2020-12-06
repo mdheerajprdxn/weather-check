@@ -159,12 +159,12 @@ nav a {
 }
 
 nav li a:hover {
-  color: #009AD8;
+  color: #009ad8;
 }
 
 li.active a{
-  color: #009AD8;
-  border: 1px solid #009AD8;
+  color: #009ad8;
+  border: 1px solid #009ad8;
 }
 
 li.active a:hover{
@@ -179,12 +179,125 @@ li.active a:hover{
   main styling starts here
 =================================*/
 
+.hero {
+  padding-top: 50px;
+  background: linear-gradient(45deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/featured-image-1@2x.jpg');
+}
 
+.hero .wrapper {
+  /* display: flex;
+  flex-flow: column; */
+}
+.search-form {
+  background-color: #1e202b;
+  padding: 5px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+}
 
+.search-form .form-element {
+  display: inline-block;
+  margin: 10px 0 10px 20px;
+  flex-grow: 1;
+  display: flex;
+}
 
+.search-form input {
+  color: #fff;
+  flex-basis: 80%;
+  background-color: transparent;
+  border: none;
+}
 
+.search-form input:focus {
+  border-bottom: 2px solid #009ad8;
+  outline: none;
+}
 
+.search-form button {
+  padding: 15px 35px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #fff;
+  background-color: #009ad8;
+  transition: all .3s ease;
+}
 
+.search-form button:hover {
+  color: #009ad8;
+  background-color: #fff;
+}
+
+.hero ul.results {
+  display: block;
+  width: 50%;
+  max-width: 550px;
+  margin: auto;
+  border-radius: 5px;
+  flex-flow: column;
+  position: relative;
+  background-color: #323544;
+  color: #fff;
+  transform: translateY(50%);
+  /* text-align: center; */
+}
+
+ul.results>li {
+  padding: 10px 20px;
+  display: block;
+  color: #ccc;
+  /* margin: 5px 5px; */
+}
+
+.results .result-top {
+  padding: 10px 12px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  background-color: #2D303D;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.results:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.city {
+  font-size: 18px;
+}
+
+.results .temprature {
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+}
+.temprature figure{
+  display: inline-block;
+  width: 100px;
+  
+}
+
+.result-bottom ul{
+  display: flex;
+}
+
+.result-bottom li {
+  margin: 10px;
+  font-size: 14px;
+}
+.result-bottom li img {
+  width: 25px;
+}
 
 /*=================================
   main styling ends here
