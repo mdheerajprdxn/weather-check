@@ -360,6 +360,50 @@ ul.results>li {
   color: #009ad8;
 }
 
+/* INFO */
+
+.info {
+  background-color: #262936;
+  color: #aaa;
+  font-size: 14px;
+  padding: 70px 0;
+}
+
+.info .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.info article {
+  flex-basis: 30%;
+  display: flex;
+}
+.time {
+  font-size: 25px;
+  color: #009ad8;
+  margin: 10px;
+}
+
+.info-item-content {
+  margin-left: 20px;
+}
+.info-item-content h3 {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.info-item-content * {
+  margin-bottom: 10px;
+}
+
+
+.info article:hover a{
+  color: #ddd;
+}
+
+.info-item-content a {
+  color: #aaa;
+}
 /*=================================
   main styling ends here
 =================================*/
