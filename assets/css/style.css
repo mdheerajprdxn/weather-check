@@ -489,8 +489,114 @@ ul.results>li {
   footer styling starts here
 =================================*/ 
 
+footer {
+  padding: 50px 0;
+  background-color: #262936;
+  color: #ccc;
+}
 
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer-upper form {
+  display: flex;
+  background-color: #1e202b;
+  flex-basis: 70%;
+  padding: 5px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  justify-content: space-between;
+}
+
+.footer-upper .form-element {
+  display: inline-block;
+  margin: 10px 0 10px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+}
+
+.footer-upper form input {
+  flex-basis: 80%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.footer-upper form input:focus {
+  border: none;
+  outline: none;
+border-bottom: 2px solid #009ad8;
+}
+
+.footer-upper button {
+  padding: 15px 35px;
+  border: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: #fff;
+  background-color: #009ad8;
+  transition: all .3s ease;
+}
+
+.footer-upper button:hover {
+  color: #009ad8;
+  background-color: #fff;
+}
+.social-icons {
+  font-size: 0;
+}
+
+footer .icon {
+  font-family: 'Font Awesome 5 Brands';
+}
+.icon:before {
+  transition: all .3s ease;
+  color: #009ad8;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: #1e202b;
+}
+
+.icon:hover:before{
+  background-color: #009ad8;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 30px;
+}
+
+.facebook:before {
+  content: '\f39e';
+}
+
+.twitter:before {
+  content: '\f099';
+}
+
+.googleplus:before {
+  content: '\f0d5';
+}
+
+.pintrest:before {
+  content: '\f0d2';
+}
 
 
 
