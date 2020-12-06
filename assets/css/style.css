@@ -297,8 +297,67 @@ ul.results>li {
 
 /* Live Cameras */
 
-.city-cam img{
-  width: auto;
+.cameras {
+ padding: 100px 0;
+ background-color: #1E202B;
+ color: #fff;
+}
+.cameras .wrapper {
+  margin-top: 150px;
+}
+
+.cameras h2 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.cameras ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cameras ul li {
+  flex-basis: 22%;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.city-cam {
+  /* background-image: url('../images/live-camera-1.jpg'); */
+  /* display: block; */
+  position: relative;
+}
+
+.camera-list li * {
+  margin: 10px 0;
+}
+
+.camera-list h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+}
+.city-cam h3 {
+  margin: 20px 0;
+}
+
+.city-cam::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-image: url('../images/play-button.png') ;
+  background-repeat: no-repeat;
+  opacity: .7;
+}
+
+.camera-list li:hover,
+.camera-list li:hover h3{
+  cursor: pointer;
+  color: #009ad8;
 }
 
 /*=================================
