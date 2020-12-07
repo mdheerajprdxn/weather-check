@@ -20,9 +20,22 @@ $("document").ready(function () {
       `http://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&&units=metric&appid=${apiKey}`
     );
     let data = await res.json();
-    console.log(data);
-    setData(data);
+    if (res.status == 200) {
+      setData(data);
+    } else {
+      setError();
+    }
   }
+
+  let fields = {};
+  fields.city = $(".city")[0];
+  fields.temp = $(".temp")[0];
+  fields.rain = $("#rain-data")[0];
+  fields.wind = $("#wind-data")[0];
+  fields.direction = $("#direction-data")[0];
+  fields.day = $(".day")[0];
+  fields.date = $(".date")[0];
+  fields.icon = $("#weather-icon");
 
   function setData(data) {
     console.log(data);
@@ -33,16 +46,9 @@ $("document").ready(function () {
     // console.log(typeof windSpeed);
     windSpeed = windSpeed.toFixed(2);
     let clouds = data.clouds.all;
-    let fields = {};
-    fields.city = $(".city")[0];
-    fields.temp = $(".temp")[0];
-    fields.rain = $("#rain-data")[0];
-    fields.wind = $("#wind-data")[0];
-    fields.direction = $("#direction-data")[0];
-    fields.day = $(".day")[0];
-    fields.date = $(".date")[0];
+
     fields.city.innerText = city;
-    fields.temp.innerText = temp;
+    fields.temp.innerHTML = temp + "&#xb0;C";
     fields.rain.innerText = clouds;
     fields.wind.innerText = windSpeed;
     fields.direction.innerText = direction;
@@ -58,8 +64,16 @@ $("document").ready(function () {
     fields.date.innerText = date.date;
 
     let icon = setIcon(data.weather[0].icon);
-    fields.icon = $("#weather-icon");
     fields.icon.attr("src", "assets/images/icons/" + icon + ".svg");
+  }
+
+  function setError() {
+    fields.city.innerText = "City Not Found";
+    fields.temp.innerText = "--";
+    fields.rain.innerText = "--";
+    fields.wind.innerText = "--";
+    fields.direction.innerText = "--";
+    fields.icon.attr("src", "assets/images/icons/" + "icon-1" + ".svg");
   }
 
   function getDirection(angle) {
