@@ -51,6 +51,10 @@ function setData(data) {
   //   console.log(date);
   fields.day.innerText = date.day;
   fields.date.innerText = date.date;
+
+  let icon = setIcon(data.weather[0].icon);
+  fields.icon = $("#weather-icon");
+  fields.icon.attr("src", "assets/images/icons/" + icon + ".svg");
 }
 
 function getDirection(angle) {
@@ -109,4 +113,43 @@ function getDate() {
     date: date + " " + month,
   };
   return dateObj;
+}
+
+function setIcon(code) {
+  let slicedCode = code.slice(0, 2);
+  console.log(slicedCode);
+  let x;
+  switch (slicedCode) {
+    case "01":
+      x = "icon-2";
+      break;
+    case "02":
+      x = "icon-3";
+      break;
+    case "03":
+      x = "icon-5";
+      break;
+    case "04":
+      x = "icon-6";
+      break;
+    case "09":
+      x = "icon-2";
+      break;
+    case "10":
+      x = "icon-4";
+      break;
+    case "11":
+      x = "icon-12";
+      break;
+    case "13":
+      x = "icon-8";
+      break;
+    case "50":
+      x = "icon-8";
+      break;
+    default:
+      x = "icon-1";
+  }
+  console.log("icon code", x);
+  return x;
 }
