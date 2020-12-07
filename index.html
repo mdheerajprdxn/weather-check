@@ -69,19 +69,23 @@
           <ul class="results">
             <li class="result-top"> <span class="day"> Monday</span> <span class="date">6 Oct</span> </li>
             <li class="city">Mumbai</li>
-            <li class="temprature">23&#xb0;C <figure><img src="assets/images/icons/icon-1.svg" alt="Weather Icon">
+            <li class="temprature"> <span class="temp">23</span>&#xb0;C <figure><img
+                  src="assets/images/icons/icon-1.svg" alt="Weather Icon">
               </figure>
             </li>
             <li class="result-bottom">
               <ul>
                 <li class="rain">
-                  <img src="assets/images/icon-umberella.png" alt="Rain Icon"> 20%
+                  <img src="assets/images/icon-umberella.png" alt="Rain Icon">
+                  <span id="rain-data">20</span>%
                 </li>
                 <li class="wind">
-                  <img src="assets/images/icon-wind.png" alt="Wind Icon"> 18km/hr
+                  <img src="assets/images/icon-wind.png" alt="Wind Icon">
+                  <span id="wind-data"> 18</span>km/hr
                 </li>
                 <li class="direction">
-                  <img src="assets/images/icon-compass.png" alt="Compass Icon"> East
+                  <img src="assets/images/icon-compass.png" alt="Compass Icon">
+                  <span id="direction-data"> East</span>
                 </li>
               </ul>
             </li>
@@ -338,7 +342,7 @@
   </div>
   <!--container end-->
 
-  <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <script src="assets/vendor/jquery-1.8.3.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 
