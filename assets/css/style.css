@@ -233,8 +233,8 @@ li.active a:hover{
 
 .hero ul.results {
   display: block;
-  width: 50%;
-  max-width: 550px;
+  max-width: 600px;
+  /* max-width: 550px; */
   margin: auto;
   border-radius: 5px;
   flex-flow: column;
