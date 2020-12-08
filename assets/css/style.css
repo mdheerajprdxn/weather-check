@@ -110,7 +110,7 @@ li {
 header {
   padding: 30px 0;
   color: #fff;
-  background-color: #1E202B;
+  background-color: #1e202b;
 }
 
 header .wrapper{
@@ -276,7 +276,7 @@ ul.results>li {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin-bottom: 30px;
-  background-color: #2D303D;
+  background-color: #2d303d;
   display: flex;
   justify-content: space-between;
   font-size: 14px;
