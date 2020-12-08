@@ -158,20 +158,25 @@ nav a {
   border-bottom-right-radius: 15px;
 }
 
-nav .icon {
+.icon.hamburger {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   display: none;
 }
 
-nav .icon:before {
+.icon.hamburger:before {
   content: "\f0c9";  
+  padding: 15px;
+  cursor: pointer;
 }
 
-nav .icon.active:before {
+.icon.hamburger:hover {
+  color: #009ad8;
+}
+
+.icon.hamburger.active:before {
   color: #009ad8;
   border: 1px solid #009ad8;
-  padding: 15px;
   border-radius: 50%;
 }
 nav li a:hover {
@@ -187,6 +192,11 @@ li.active a:hover{
   color: #fff;
   border: 1px solid #fff;
 }
+
+.show-nav{
+  display: block;
+}
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -734,10 +744,43 @@ footer .icon:hover:before{
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
-  nav ul {
+  header .wrapper {    flex-wrap: wrap;  }
+  
+  nav {
+    margin-top: 30px;
     display: none;
+    flex-basis: 100%;
+    /* flex-flow: column; */
   }
-  nav span.icon {
+
+  nav ul {
+    display: flex;
+    flex-flow: column;
+  }
+
+  nav ul li {
+    background-color: #262936;
+    padding: 10px 0;
+  }
+
+
+  nav li a{
+    display: block;
+    text-align: center;
+  }
+
+
+  nav li.active a{
+    border: none;
+
+  }
+
+  nav li.active a:hover{
+    border: none;
+
+  }
+  .icon.hamburger {
+    float: right;
     display: block;
   }
 
