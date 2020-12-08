@@ -720,7 +720,6 @@ footer .icon:hover:before{
   .extra .wrapper>div:first-child { margin-top: 0; }
 }  
 
-
 @media only screen and (max-width: 767px) {
   .brand { flex-basis: 40%; }
   .results .temprature { font-size: 70px; }
