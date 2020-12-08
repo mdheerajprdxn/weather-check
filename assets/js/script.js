@@ -172,4 +172,17 @@ $("document").ready(function () {
     console.log("icon code", x);
     return x;
   }
+
+  // NAV Responsive functionality
+  let nav = $("nav")[0];
+  let navButton = $(".icon.hamburger");
+  navButton.click(function () {
+    if ($(nav).hasClass("show-nav")) {
+      nav.classList.remove("show-nav");
+      navButton[0].classList.remove("active");
+    } else {
+      nav.classList.add("show-nav");
+      navButton[0].classList.add("active");
+    }
+  });
 });
