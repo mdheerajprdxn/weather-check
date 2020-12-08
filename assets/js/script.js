@@ -14,6 +14,7 @@ $("document").ready(function () {
     let searchField = $(this).find("#search");
     let searchTerm = searchField[0].value;
     search(searchTerm);
+    searchField[0].value = "";
   });
 
   //fetch data from API
