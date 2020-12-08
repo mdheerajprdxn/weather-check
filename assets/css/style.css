@@ -177,13 +177,14 @@ nav a {
 }
 
 nav li a:hover { color: #009ad8; }
+nav a { transition: all .3s ease; }
 
-li.active a{
+nav a.active {
   color: #009ad8;
   border: 1px solid #009ad8;
 }
 
-li.active a:hover{
+nav a.active:hover{
   color: #fff;
   border: 1px solid #fff;
 }
@@ -420,11 +421,12 @@ ul.results>li {
 .extra .wrapper > * { flex-basis: 30%; }
 .features { font-size: 14px; }
 
-.features h3 {
+.features h3 a{
   color: #fff;
   margin: 20px 0;
   font-weight: 600;
   position: relative;
+  transition: .3s all ease;
 }
 
 .analysis {
@@ -439,7 +441,7 @@ ul.results>li {
   border-bottom: 1px solid #444;
 }
 
-.features h3:before,
+.features h3 a:before,
 .analysis  li a::before {
   content: "";
   position: absolute;
@@ -453,6 +455,7 @@ ul.results>li {
   justify-content: center;
 }
 
+.features h3 a:hover { color: #009ad8; }
 .analysis li a{
   font-size: 14px;
   display: flex;
