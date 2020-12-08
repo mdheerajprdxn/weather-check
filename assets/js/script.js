@@ -54,6 +54,7 @@ $("document").ready(function () {
     fields.rain.innerText = clouds;
     fields.wind.innerText = windSpeed;
     fields.direction.innerText = direction;
+
     let date = getDate();
     fields.day.innerText = date.day;
     fields.date.innerText = date.date;
