@@ -6,6 +6,17 @@ $("document").ready(function () {
   // api key for open weather API
   let apiKey = "311af908efa1e13e02d651f9e53cac50";
 
+  // Initialize all the fields in which data is to be shown
+  let fields = {};
+  fields.city = $(".city")[0];
+  fields.temp = $(".temp")[0];
+  fields.rain = $("#rain-data")[0];
+  fields.wind = $("#wind-data")[0];
+  fields.direction = $("#direction-data")[0];
+  fields.day = $(".day")[0];
+  fields.date = $(".date")[0];
+  fields.icon = $("#weather-icon");
+
   //Initial search after page load
   search("mumbai");
 
@@ -29,17 +40,6 @@ $("document").ready(function () {
       setError();
     }
   }
-
-  // Initialize all the fields in which data is to be shown
-  let fields = {};
-  fields.city = $(".city")[0];
-  fields.temp = $(".temp")[0];
-  fields.rain = $("#rain-data")[0];
-  fields.wind = $("#wind-data")[0];
-  fields.direction = $("#direction-data")[0];
-  fields.day = $(".day")[0];
-  fields.date = $(".date")[0];
-  fields.icon = $("#weather-icon");
 
   // use the data object passed from search function and set it to display
   function setData(data) {
