@@ -481,19 +481,19 @@ ul.results>li {
   color: #fff;
 }
 
-.photos ul {
+.extra .photos ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.photos li {
+.extra .photos li {
   flex-basis: 31%;
   margin-bottom: 10px;
   transition: 0.3s all ease;
 }
 
-.photos li:hover {
+.extra .photos li:hover {
   transform: scale(1.1);
 }
 
