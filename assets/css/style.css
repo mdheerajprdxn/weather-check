@@ -99,7 +99,7 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
+  max-width: 1250px;
   width: 86%; 
   margin: 0 auto;
 }
@@ -181,7 +181,9 @@ li.active a:hover{
 
 .hero {
   padding-top: 50px;
-  background: linear-gradient(45deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/featured-image-1@2x.jpg');
+  background: linear-gradient(45deg, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../images/featured-image-1@2x.jpg') center no-repeat;
+  background-size: cover;
+
 }
 
 .search-form {
@@ -319,7 +321,7 @@ ul.results>li {
 .cameras ul li {
   flex-basis: 22%;
   font-size: 12px;
-  color: #ccc;
+  color: #aaa;
 }
 
 .city-cam {
@@ -532,7 +534,7 @@ ul.results>li {
 
 .gallery {
   background-color: #1e202b;
-  color: #ccc;
+  color: #aaa;
 }
 
 .gallery .photos {
@@ -557,7 +559,7 @@ ul.results>li {
   flex-basis: 50%;
   display: flex;
   flex-flow: column;
-  margin-left: 10px;
+  margin-left: 20px;
   /* justify-content: space-around; */
 }
 
@@ -685,7 +687,7 @@ footer .icon:hover:before{
 
 .copyright {
   font-size: 13px;
-  color: #ccc;
+  color: #aaa;
   margin-top: 30px;
 }
 
