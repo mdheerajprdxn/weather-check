@@ -108,9 +108,9 @@ li {
 =================================*/
 
 header {
+  padding: 30px 0;
   color: #fff;
   background-color: #1E202B;
-  padding: 30px 0;
 }
 
 header .wrapper{
@@ -145,50 +145,50 @@ header .wrapper{
 }
 
 nav a {
-  margin-right: 10px;
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
   padding: 5px 20px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 .icon.hamburger {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
   display: none;
+  font-family: 'Font Awesome 5 Free';
   font-size: 0;
+  font-weight: 900;
 }
 
 .icon.hamburger:before {
-  content: "\f0c9";  
-  font-size: 14px;
   padding: 15px;
+  content: "\f0c9";  
   cursor: pointer;
+  font-size: 14px;
 }
 
 .icon.hamburger:hover { color: #009ad8; }
 
 .icon.hamburger.active:before {
-  color: #009ad8;
   border: 1px solid #009ad8;
   border-radius: 50%;
+  color: #009ad8;
 }
 
 nav li a:hover { color: #009ad8; }
 nav a { transition: all .3s ease; }
 
 nav a.active {
-  color: #009ad8;
   border: 1px solid #009ad8;
+  color: #009ad8;
 }
 
 nav a.active:hover{
-  color: #fff;
   border: 1px solid #fff;
+  color: #fff;
 }
 
 .show-nav{ display: block; }
@@ -208,7 +208,6 @@ nav a.active:hover{
 }
 
 .search-form {
-  background-color: #1e202b;
   padding: 5px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -216,20 +215,20 @@ nav a.active:hover{
   border-bottom-right-radius: 25px;
   display: flex;
   justify-content: space-between;
+  background-color: #1e202b;
 }
 
 .search-form .form-element {
-  display: inline-block;
   margin: 10px 0 10px 20px;
-  flex-grow: 1;
   display: flex;
+  flex-grow: 1;
 }
 
 .search-form input {
-  color: #fff;
+  border: none;
   flex-basis: 80%;
   background-color: transparent;
-  border: none;
+  color: #fff;
 }
 
 .search-form input:focus {
@@ -244,8 +243,8 @@ nav a.active:hover{
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  color: #fff;
   background-color: #009ad8;
+  color: #fff;
   transition: all .3s ease;
 }
 
@@ -255,10 +254,10 @@ nav a.active:hover{
 }
 
 .hero ul.results {
-  display: block;
   max-width: 600px;
-  margin: auto;
   border-radius: 5px;
+  margin: auto;
+  display: block;
   flex-flow: column;
   position: relative;
   background-color: #323544;
@@ -274,13 +273,13 @@ ul.results>li {
 
 .results .result-top {
   padding: 10px 12px;
-  font-size: 14px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-bottom: 30px;
   background-color: #2D303D;
   display: flex;
   justify-content: space-between;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  font-size: 14px;
 }
 
 .results:last-child {
@@ -291,23 +290,24 @@ ul.results>li {
 .city { font-size: 18px; }
 
 .results .temprature {
+  color: #fff;
   font-size: 100px;
   font-weight: 600;
-  color: #fff;
 }
 
 .temprature figure{
-  display: inline-block;
   width: 100px;
+  display: inline-block;
 }
 
 .result-bottom ul{ display: flex; }
+.result-bottom li img { width: 25px; }
 
 .result-bottom li {
   margin: 10px;
   font-size: 14px;
 }
-.result-bottom li img { width: 25px; }
+
 
 /* Live Cameras */
 
@@ -320,8 +320,8 @@ ul.results>li {
 .cameras .wrapper { margin-top: 150px; }
 
 .cameras h2 {
-  font-size: 35px;
   margin: 10px 0;
+  font-size: 35px;
 }
 
 .camera-list {
@@ -330,18 +330,18 @@ ul.results>li {
 }
 
 .camera-list li {
+  color: #aaa;
   flex-basis: 22%;
   font-size: 12px;
-  color: #aaa;
 }
 
 .city-cam { position: relative; }
 .camera-list li * { margin: 10px 0; }
 
 .camera-list h3 {
-  text-transform: uppercase;
   color: #fff;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 .city-cam h3 { margin: 20px 0; }
@@ -351,9 +351,9 @@ ul.results>li {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
   width: 50px;
   height: 50px;
+  transform: translateX(-50%);
   background-image: url('../images/play-button.png') ;
   background-repeat: no-repeat;
   opacity: .7;
@@ -368,10 +368,10 @@ ul.results>li {
 /* INFO */
 
 .info {
+  padding: 70px 0;
   background-color: #262936;
   color: #aaa;
   font-size: 14px;
-  padding: 70px 0;
 }
 
 .info .wrapper {
@@ -380,14 +380,14 @@ ul.results>li {
 }
 
 .info article {
-  flex-basis: 30%;
   display: flex;
+  flex-basis: 30%;
 }
 
 .time {
-  font-size: 25px;
-  color: #009ad8;
   margin: 10px;
+  color: #009ad8;
+  font-size: 25px;
 }
 
 .info-item-content { margin-left: 20px; }
@@ -415,19 +415,19 @@ ul.results>li {
 }
 
 .extra h2 {
+  margin-bottom: 20px;
   font-size: 30px;
   color: #fff;
-  margin-bottom: 20px;
 }
 
 .extra .wrapper > * { flex-basis: 30%; }
 .features { font-size: 14px; }
 
 .features h3 a{
-  color: #fff;
   margin: 20px 0;
-  font-weight: 600;
   position: relative;
+  color: #fff;
+  font-weight: 600;
   transition: .3s all ease;
 }
 
@@ -437,20 +437,20 @@ ul.results>li {
 }
 
 .analysis li {
-  display: flex;
-  align-items: center;
   padding: 10px;
   border-bottom: 1px solid #444;
+  display: flex;
+  align-items: center;
 }
 
 .features h3 a:before,
 .analysis  li a::before {
   content: "";
   position: absolute;
+  height: 20px;
   width: 20px;
   top: 5px;
   transform: translateX(-100%);
-  height: 20px;
   background: url('../images/arrow.png');
   background-repeat: no-repeat;
   align-items: center;
@@ -459,10 +459,10 @@ ul.results>li {
 
 .features h3 a:hover { color: #009ad8; }
 .analysis li a{
-  font-size: 14px;
   display: flex;
   position: relative;
   color: #ddd;
+  font-size: 14px;
 }
 
 .analysis li a:hover { color: #fff; }
@@ -474,8 +474,8 @@ ul.results>li {
 }
 
 .awesome-photos li {
-  flex-basis: 31%;
   margin-bottom: 10px;
+  flex-basis: 31%;
   transition: 0.3s all ease;
 }
 
@@ -484,24 +484,24 @@ ul.results>li {
 /* BreadCrumbs */
 
 .breadcrumbs {
-  background-color: #1e202b;
   padding: 40px 0;
+  background-color: #1e202b;
 }
 
 .breadcrumbs .wrapper {
-  background-color: #262936;
-  padding: 20px 30px;
   box-sizing: border-box;
+  padding: 20px 30px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  background-color: #262936;
 }
 
 .breadcrumbs a {
   color: #ccc;
-  text-transform: capitalize;
   font-size: 13px;
+  text-transform: capitalize;
 }
 
 .breadcrumbs a.active { color: #fff; }
@@ -522,20 +522,20 @@ ul.results>li {
 }
 
 .gallery .photos>li {
-  flex-basis: 48%;
-  display: flex;
-  align-items: stretch;
-  background-color: #262936;
   margin-bottom: 40px;
   border-radius: 15px;
+  display: flex;
+  flex-basis: 48%;
   overflow: hidden;
+  align-items: stretch;
+  background-color: #262936;
 }
 
 .photos li div {
-  flex-basis: 50%;
-  display: flex;
-  flex-flow: column;
   margin: 20px;
+  display: flex;
+  flex-basis: 50%;
+  flex-flow: column;
 }
 
 .gallery figure img {
@@ -552,8 +552,8 @@ ul.results>li {
 .stars .icon { font-family: 'Font Awesome 5 Free'; }
 
 ul.stars {
-  display: flex;
   margin-top: 10px;
+  display: flex;
 }
 
 .star:before {
@@ -585,37 +585,34 @@ footer {
 }
 
 .footer-upper form {
-  display: flex;
-  background-color: #1e202b;
-  flex-basis: 70%;
   padding: 5px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  display: flex;
+  flex-basis: 70%;
   justify-content: space-between;
+  background-color: #1e202b;
 }
 
 .footer-upper .form-element {
-  display: inline-block;
   margin: 10px 0 10px 20px;
-  flex-grow: 1;
   display: flex;
   flex-grow: 1;
-  display: flex;
 }
 
 .footer-upper form input {
+  border: none;
   flex-basis: 80%;
   background-color: transparent;
-  border: none;
   color: #fff;
 }
 
 .footer-upper form input:focus {
   border: none;
-  outline: none;
   border-bottom: 2px solid #009ad8;
+  outline: none;
 }
 
 .footer-upper button {
@@ -634,21 +631,22 @@ footer {
   color: #009ad8;
   background-color: #fff;
 }
+
 .social-icons { font-size: 0; }
 footer .icon { font-family: 'Font Awesome 5 Brands'; }
 
 footer .icon:before {
-  transition: all .3s ease;
-  color: #009ad8;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
   margin-left: 5px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1e202b;
+  color: #009ad8;
+  font-size: 18px;
+  transition: all .3s ease;
 }
 
 footer .icon:hover:before{
@@ -693,7 +691,7 @@ footer .icon:hover:before{
     padding: 10px 0;
   }
 
-  nav li a{
+  nav li a {
     display: block;
     text-align: center;
   }
@@ -702,15 +700,15 @@ footer .icon:hover:before{
   nav li.active a:hover{ border: none; }
 
   .icon.hamburger {
-    float: right;
     display: block;
+    float: right;
   }
 
   .camera-list{ flex-wrap: wrap; }
 
   .cameras li {
-    flex-basis: 45%;
     margin-bottom: 20px;
+    flex-basis: 45%;
   }
   
   .info .wrapper { flex-wrap: wrap; }
@@ -718,8 +716,8 @@ footer .icon:hover:before{
   .extra .wrapper { flex-wrap: wrap; }
 
   .extra .wrapper>div {
-    flex-basis: 45%;
     margin-top: 30px;
+    flex-basis: 45%;
   }
   
   .extra .wrapper>div:first-child { margin-top: 0; }
