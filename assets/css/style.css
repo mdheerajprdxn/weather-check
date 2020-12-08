@@ -126,8 +126,9 @@ header .wrapper{
   color: #fff;
 }
 
-.brand a figure {
-  max-width: 200px;
+.brand a img {
+  display: inline-block;
+  width: 70px;
   padding-right: 10px;
 }
 
