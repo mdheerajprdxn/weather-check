@@ -339,12 +339,12 @@ ul.results>li {
   margin: 10px 0;
 }
 
-.cameras ul {
+.camera-list {
   display: flex;
   justify-content: space-between;
 }
 
-.cameras ul li {
+.camera-list li {
   flex-basis: 22%;
   font-size: 12px;
   color: #aaa;
@@ -573,20 +573,25 @@ ul.results>li {
 .gallery .photos>li {
   flex-basis: 48%;
   display: flex;
+  align-items: stretch;
   background-color: #262936;
   margin-bottom: 40px;
   border-radius: 15px;
   overflow: hidden;
 }
 
-.gallery .photos>li {
-}
 .photos li div {
   flex-basis: 50%;
   display: flex;
   flex-flow: column;
-  margin-left: 20px;
+  margin: 20px;
   /* justify-content: space-around; */
+}
+
+.gallery figure img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
 }
 
 .photos h3 {
@@ -763,25 +768,112 @@ footer .icon:hover:before{
     padding: 10px 0;
   }
 
-
   nav li a{
     display: block;
     text-align: center;
   }
 
-
-  nav li.active a{
-    border: none;
-
+  nav li.active a{    border: none;  }
+  nav li.active a:hover{    border: none;
   }
 
-  nav li.active a:hover{
-    border: none;
-
-  }
   .icon.hamburger {
     float: right;
     display: block;
   }
 
+  .camera-list{    flex-wrap: wrap;  }
+
+  .cameras li {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .info .wrapper {    flex-wrap: wrap;  }
+  .info li {     flex-basis: 45%;  }
+  .extra .wrapper {    flex-wrap: wrap;  }
+
+  .extra .wrapper>div {
+    flex-basis: 45%;
+    margin-top: 30px;
+  }
 }  
+
+
+@media only screen and (max-width: 767px) {
+  .brand {
+    flex-basis: 40%;
+  }
+  .results .temprature {
+    font-size: 70px;
+  }
+  .cameras li {
+    flex-basis: 100%;
+  }
+  .info li {     flex-basis: 100%;  }
+  .extra .wrapper>div {
+    flex-basis: 100%;
+  }
+
+  .footer-upper {
+    flex-wrap: wrap;
+  }
+  .footer-upper form {
+    flex-basis: 100%;
+  }
+  .social-icons {
+    margin-top: 20px;
+  }
+  .gallery .photos>li {
+    flex-basis: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 540px) {
+  .brand {
+    flex-basis: 50%;
+  }
+  .results .temprature {
+    font-size: 50px;
+  }
+  .temprature figure {
+    max-width: 70px;
+  }
+  .city {
+    font-size: 15px;
+  }
+  .result-top {
+    font-size: 12px;
+  }
+  .result-bottom li {
+    font-size: 12px;
+  }
+  
+ 
+}
+/* 540px, 480 */
+
+@media only screen and (max-width: 480px) {
+
+  .brand {
+    flex-basis: 60%;
+  }
+  .results .temprature {
+    font-size: 50px;
+  }
+  .temprature figure {
+    max-width: 70px;
+  }
+  .footer-upper button {
+    padding: 10px 20px;
+    border: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #fff;
+    background-color: #009ad8;
+    transition: all .3s ease;
+}
+}
