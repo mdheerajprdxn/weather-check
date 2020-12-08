@@ -3,8 +3,10 @@
 */
 
 $("document").ready(function () {
+  // api key for open weather API
   let apiKey = "311af908efa1e13e02d651f9e53cac50";
 
+  //Initial search after page load
   search("mumbai");
 
   $(".search-form").submit(async function (e) {
@@ -12,9 +14,9 @@ $("document").ready(function () {
     let searchField = $(this).find("#search");
     let searchTerm = searchField[0].value;
     search(searchTerm);
-    //   console.log(searchData);
   });
 
+  //fetch data from API
   async function search(searchTerm) {
     let res = await fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${searchTerm}&&units=metric&appid=${apiKey}`
@@ -27,6 +29,7 @@ $("document").ready(function () {
     }
   }
 
+  // Initialize all the fields in which data is to be shown
   let fields = {};
   fields.city = $(".city")[0];
   fields.temp = $(".temp")[0];
@@ -37,13 +40,12 @@ $("document").ready(function () {
   fields.date = $(".date")[0];
   fields.icon = $("#weather-icon");
 
+  // use the data object passed from search function and set it to display
   function setData(data) {
-    console.log(data);
     let city = data.name;
     let temp = data.main.temp;
     let direction = getDirection(data.wind.deg);
     let windSpeed = (data.wind.speed * 60 * 60) / 1000;
-    // console.log(typeof windSpeed);
     windSpeed = windSpeed.toFixed(2);
     let clouds = data.clouds.all;
 
@@ -52,14 +54,7 @@ $("document").ready(function () {
     fields.rain.innerText = clouds;
     fields.wind.innerText = windSpeed;
     fields.direction.innerText = direction;
-    //   console.log(fields);
-    //   console.log("city", city);
-    //   console.log("temp", temp);
-    //   console.log("wind direction", direction);
-    //   console.log("wind speed", windSpeed);
-    //   console.log("clouds", clouds);
     let date = getDate();
-    //   console.log(date);
     fields.day.innerText = date.day;
     fields.date.innerText = date.date;
 
@@ -67,6 +62,7 @@ $("document").ready(function () {
     fields.icon.attr("src", "assets/images/icons/" + icon + ".svg");
   }
 
+  // set empty divs in case city not found
   function setError() {
     fields.city.innerText = "City Not Found";
     fields.temp.innerText = "--";
@@ -76,6 +72,7 @@ $("document").ready(function () {
     fields.icon.attr("src", "assets/images/icons/" + "icon-1" + ".svg");
   }
 
+  //convert direction of wind from angle to words
   function getDirection(angle) {
     var directions = [
       "North",
@@ -124,7 +121,7 @@ $("document").ready(function () {
     let month = months[today.getMonth().toString().substring(0, 3)];
     month = month.substring(0, 3);
 
-    // get day
+    // get date
     let date = today.getDate();
 
     let dateObj = {
@@ -134,9 +131,9 @@ $("document").ready(function () {
     return dateObj;
   }
 
+  //Set icon to filename according to icon code returned by API
   function setIcon(code) {
     let slicedCode = code.slice(0, 2);
-    console.log(slicedCode);
     let x;
     switch (slicedCode) {
       case "01":
@@ -169,7 +166,6 @@ $("document").ready(function () {
       default:
         x = "icon-1";
     }
-    console.log("icon code", x);
     return x;
   }
 
@@ -186,3 +182,6 @@ $("document").ready(function () {
     }
   });
 });
+
+// font awesome epmty span
+// photo nav active
