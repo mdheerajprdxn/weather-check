@@ -182,6 +182,3 @@ $("document").ready(function () {
     }
   });
 });
-
-// font awesome epmty span
-// photo nav active
