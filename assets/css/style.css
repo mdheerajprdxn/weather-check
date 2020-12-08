@@ -481,20 +481,109 @@ ul.results>li {
   color: #fff;
 }
 
-.photos ul {
+.awesome-photos ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.photos li {
+.awesome-photos li {
   flex-basis: 31%;
   margin-bottom: 10px;
   transition: 0.3s all ease;
 }
 
-.photos li:hover {
+.awesome-photos li:hover {
   transform: scale(1.1);
+}
+
+/* BreadCrumbs */
+
+.breadcrumbs {
+  background-color: #1e202b;
+  padding: 40px 0;
+}
+
+.breadcrumbs .wrapper {
+  background-color: #262936;
+  /* background-color: #fff; */
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.breadcrumbs a {
+  color: #ccc;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.breadcrumbs a.active {
+  color: #fff;
+}
+.breadcrumbs img {
+  width: auto;
+}
+
+/* gallery */
+
+.gallery {
+  background-color: #1e202b;
+  color: #ccc;
+}
+
+.gallery .photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.gallery .photos>li {
+  flex-basis: 48%;
+  display: flex;
+  background-color: #262936;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.gallery .photos>li {
+}
+.photos li div {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: column;
+  margin-left: 10px;
+  /* justify-content: space-around; */
+}
+
+.photos h3 {
+  padding: 20px 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.stars .icon {
+  font-family: 'Font Awesome 5 Free';
+}
+
+ul.stars {
+  display: flex;
+  margin-top: 10px;
+}
+
+.star:before {
+  content: '\f005';
+  color: #1e202b;
+  font-weight: 900;
+}
+
+.star.active:before {
+  color: #009ad8;
 }
 
 
@@ -574,7 +663,8 @@ border-bottom: 2px solid #009ad8;
 footer .icon {
   font-family: 'Font Awesome 5 Brands';
 }
-.icon:before {
+
+footer .icon:before {
   transition: all .3s ease;
   color: #009ad8;
   font-size: 18px;
@@ -588,7 +678,7 @@ footer .icon {
   background-color: #1e202b;
 }
 
-.icon:hover:before{
+footer .icon:hover:before{
   background-color: #009ad8;
   color: #fff;
 }
