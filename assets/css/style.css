@@ -424,6 +424,11 @@ ul.results>li {
 .extra .wrapper > * { flex-basis: 30%; }
 .features { font-size: 14px; }
 
+.features ul,
+.analysis ul  {
+  margin: 0 15px;
+}
+
 .features h3 a{
   margin: 20px 0;
   position: relative;
@@ -734,6 +739,7 @@ footer .icon:hover:before{
   .footer-upper form { flex-basis: 100%; }
   .social-icons { margin-top: 20px; }
   .gallery .photos>li { flex-basis: 100%; }
+ 
 }
 
 
