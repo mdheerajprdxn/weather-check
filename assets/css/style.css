@@ -195,6 +195,7 @@ nav a {
 }
 
 nav li a:hover { color: #009ad8; }
+
 nav a { 
   -webkit-transition: all .3s ease; 
   transition: all .3s ease; 
@@ -893,7 +894,8 @@ footer .icon:hover:before{
     flex-basis: 100%; 
   }
 
-  .info li { -ms-flex-preferred-size: 100%; 
+  .info li { 
+    -ms-flex-preferred-size: 100%; 
     flex-basis: 100%; 
   }
 
@@ -914,7 +916,8 @@ footer .icon:hover:before{
 
   .social-icons { margin-top: 20px; }
 
-  .gallery .photos>li { -ms-flex-preferred-size: 100%; 
+  .gallery .photos>li { 
+    -ms-flex-preferred-size: 100%; 
     flex-basis: 100%; 
   }
 
