@@ -43,7 +43,6 @@ $("document").ready(function () {
 
   // use the data object passed from search function and set it to display
   function setData(data) {
-    console.log(data);
     let city = data.name;
     let temp = data.main.temp;
     let deg = data.wind.deg;
