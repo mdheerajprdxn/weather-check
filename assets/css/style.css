@@ -139,6 +139,7 @@ header .wrapper {
 
 .brand a img {
   width: 70px;
+  height: auto;
   padding-right: 10px;
   display: inline-block;
 }
@@ -881,8 +882,8 @@ footer .icon:hover:before{
 @media only screen and (max-width: 767px) {
   
   .brand { 
-    -ms-flex-preferred-size: 40%; 
-    flex-basis: 40%; 
+    -ms-flex-preferred-size: 50%; 
+    flex-basis: 50%; 
   }
 
   .results .temprature { font-size: 70px; }
@@ -923,11 +924,6 @@ footer .icon:hover:before{
 
 @media only screen and (max-width: 540px) {
 
-  .brand { 
-    -ms-flex-preferred-size: 50%; 
-    flex-basis: 50%; 
-  }
-
   .results .temprature { font-size: 50px; }
   .temprature figure { max-width: 70px;}
   .city { font-size: 15px; }
@@ -939,8 +935,12 @@ footer .icon:hover:before{
 @media only screen and (max-width: 480px) {
 
   .brand { 
-    -ms-flex-preferred-size: 60%; 
-    flex-basis: 60%; 
+    -ms-flex-preferred-size: 70%; 
+    flex-basis: 70%; 
+  }
+    
+  .brand a img {
+    width: 50px;
   }
 
   .results .temprature { font-size: 50px; }
