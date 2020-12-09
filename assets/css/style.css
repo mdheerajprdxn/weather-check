@@ -246,6 +246,7 @@ nav a.active:hover{
   border-bottom-right-radius: 25px;
   background-color: #009ad8;
   color: #fff;
+  text-transform: capitalize;
   transition: all .3s ease;
 }
 
@@ -630,6 +631,7 @@ footer {
   border-bottom-right-radius: 25px;
   color: #fff;
   background-color: #009ad8;
+  text-transform: capitalize;
   transition: all .3s ease;
 }
 
