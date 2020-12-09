@@ -48,7 +48,6 @@ $("document").ready(function () {
     let city = data.name;
     let temp = data.main.temp;
     let deg = data.wind.deg;
-    let direction = getDirection(data.wind.deg);
     let windSpeed = (data.wind.speed * 60 * 60) / 1000;
     windSpeed = windSpeed.toFixed(2);
     let rain = data.main.humidity;
@@ -57,7 +56,7 @@ $("document").ready(function () {
     fields.temp.innerHTML = temp + "&#xb0;C";
     fields.rain.innerText = rain;
     fields.wind.innerText = windSpeed;
-    fields.direction.innerHTML = deg + "&#xb0; (" + direction + ")";
+    fields.direction.innerHTML = deg + "&#xb0;";
 
     let date = getDate();
     fields.day.innerText = date.day;
@@ -75,23 +74,6 @@ $("document").ready(function () {
     fields.wind.innerText = "--";
     fields.direction.innerText = "--";
     fields.icon.attr("src", "assets/images/icons/" + "icon-1" + ".svg");
-  }
-
-  //convert direction of wind from angle to words
-  function getDirection(angle) {
-    var directions = [
-      "North",
-      "North-West",
-      "West",
-      "South-West",
-      "South",
-      "South-East",
-      "East",
-      "North-East",
-    ];
-    return directions[
-      Math.round(((angle %= 360) < 0 ? angle + 360 : angle) / 45) % 8
-    ];
   }
 
   function getDate() {
