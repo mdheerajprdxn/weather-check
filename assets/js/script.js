@@ -4,7 +4,7 @@
 
 $("document").ready(function () {
   // api key for open weather API
-  let apiKey = "311af908efa1e13e02d651f9e53cac50";
+  const apiKey = "311af908efa1e13e02d651f9e53cac50";
 
   // Initialize all the fields in which data is to be shown
   let fields = {};
