@@ -939,10 +939,7 @@ footer .icon:hover:before{
     flex-basis: 70%; 
   }
     
-  .brand a img {
-    width: 50px;
-  }
-
+  .brand a img { width: 50px; }
   .results .temprature { font-size: 50px; }
   .temprature figure { max-width: 70px; }
 
