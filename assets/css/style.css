@@ -113,7 +113,7 @@ header {
   background-color: #1e202b;
 }
 
-header .wrapper{
+header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,15 +121,15 @@ header .wrapper{
 
 .brand { flex-basis: 30%; }
 
-.brand a{
+.brand a {
   display: flex;
   color: #fff;
 }
 
 .brand a img {
-  display: inline-block;
   width: 70px;
   padding-right: 10px;
+  display: inline-block;
 }
 
 .brand-name {
@@ -187,7 +187,7 @@ nav a.active {
   color: #009ad8;
 }
 
-nav a.active:hover{
+nav a.active:hover {
   border: 1px solid #fff;
   color: #fff;
 }
@@ -297,12 +297,12 @@ ul.results>li {
   font-weight: 600;
 }
 
-.temprature figure{
+.temprature figure {
   width: 100px;
   display: inline-block;
 }
 
-.result-bottom ul{ display: flex; }
+.result-bottom ul { display: flex; }
 .result-bottom li img { width: 25px; }
 
 .result-bottom li {
@@ -426,11 +426,11 @@ ul.results>li {
 .features { font-size: 14px; }
 
 .features ul,
-.analysis ul  {
+.analysis ul {
   margin: 0 15px;
 }
 
-.features h3 a{
+.features h3 a {
   margin: 20px 0;
   position: relative;
   color: #fff;
@@ -453,19 +453,20 @@ ul.results>li {
 .features h3 a:before,
 .analysis  li a::before {
   content: "";
-  position: absolute;
   height: 20px;
   width: 20px;
   top: 5px;
-  transform: translateX(-100%);
-  background: url('../images/arrow.png');
-  background-repeat: no-repeat;
+  position: absolute;
   align-items: center;
   justify-content: center;
+  background: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  transform: translateX(-100%);
 }
 
 .features h3 a:hover { color: #009ad8; }
-.analysis li a{
+
+.analysis li a {
   display: flex;
   position: relative;
   color: #ddd;
@@ -732,6 +733,7 @@ footer .icon:hover:before{
 }  
 
 @media only screen and (max-width: 767px) {
+  
   .brand { flex-basis: 40%; }
   .results .temprature { font-size: 70px; }
   .cameras li { flex-basis: 100%; }
