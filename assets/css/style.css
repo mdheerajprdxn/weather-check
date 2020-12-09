@@ -125,7 +125,10 @@ header .wrapper {
           align-items: center;
 }
 
-.brand { -ms-flex-preferred-size: 30%; flex-basis: 30%; }
+.brand { 
+  -ms-flex-preferred-size: 30%; 
+  flex-basis: 30%; 
+}
 
 .brand a {
   display: -webkit-box;
@@ -191,7 +194,10 @@ nav a {
 }
 
 nav li a:hover { color: #009ad8; }
-nav a { -webkit-transition: all .3s ease; transition: all .3s ease; }
+nav a { 
+  -webkit-transition: all .3s ease; 
+  transition: all .3s ease; 
+}
 
 nav a.active {
   border: 1px solid #009ad8;
@@ -330,7 +336,12 @@ ul.results>li {
   display: inline-block;
 }
 
-.result-bottom ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.result-bottom ul { 
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+}
+
 .result-bottom li img { width: 25px; }
 
 .result-bottom li {
@@ -467,7 +478,11 @@ ul.results>li {
   color: #fff;
 }
 
-.extra .wrapper > * { -ms-flex-preferred-size: 30%; flex-basis: 30%; }
+.extra .wrapper > * { 
+  -ms-flex-preferred-size: 30%; 
+  flex-basis: 30%; 
+}
+
 .features { font-size: 14px; }
 
 .features ul,
@@ -554,7 +569,10 @@ ul.results>li {
   transition: 0.3s all ease;
 }
 
-.awesome-photos li:hover { -webkit-transform: scale(1.1); transform: scale(1.1); }
+.awesome-photos li:hover { 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
 
 /* BreadCrumbs */
 
@@ -787,7 +805,10 @@ footer .icon:hover:before{
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
-  header .wrapper { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header .wrapper { 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+  }
   
   nav {
     margin-top: 30px;
@@ -822,7 +843,10 @@ footer .icon:hover:before{
     float: right;
   }
 
-  .camera-list{ -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .camera-list{ 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+  }
 
   .cameras li {
     margin-bottom: 20px;
@@ -830,9 +854,20 @@ footer .icon:hover:before{
         flex-basis: 45%;
   }
   
-  .info .wrapper { -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .info li { -ms-flex-preferred-size: 45%; flex-basis: 45%; }
-  .extra .wrapper { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .info .wrapper { 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+  }
+
+  .info li { 
+    -ms-flex-preferred-size: 45%; 
+    flex-basis: 45%; 
+  }
+
+  .extra .wrapper { 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+  }
 
   .extra .wrapper>div {
     margin-top: 30px;
@@ -845,22 +880,54 @@ footer .icon:hover:before{
 
 @media only screen and (max-width: 767px) {
   
-  .brand { -ms-flex-preferred-size: 40%; flex-basis: 40%; }
+  .brand { 
+    -ms-flex-preferred-size: 40%; 
+    flex-basis: 40%; 
+  }
+
   .results .temprature { font-size: 70px; }
-  .cameras li { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
-  .info li { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
-  .extra .wrapper>div { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
-  .footer-upper { -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .footer-upper form { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+
+  .cameras li { 
+    -ms-flex-preferred-size: 100%; 
+    flex-basis: 100%; 
+  }
+
+  .info li { -ms-flex-preferred-size: 100%; 
+    flex-basis: 100%; 
+  }
+
+  .extra .wrapper>div { 
+    -ms-flex-preferred-size: 100%; 
+    flex-basis: 100%; 
+  }
+
+  .footer-upper { 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap; 
+  }
+
+  .footer-upper form { 
+    -ms-flex-preferred-size: 100%; 
+    flex-basis: 100%; 
+  }
+
   .social-icons { margin-top: 20px; }
-  .gallery .photos>li { -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+
+  .gallery .photos>li { -ms-flex-preferred-size: 100%; 
+    flex-basis: 100%; 
+  }
+
  
 }
 
 
 @media only screen and (max-width: 540px) {
 
-  .brand { -ms-flex-preferred-size: 50%; flex-basis: 50%; }
+  .brand { 
+    -ms-flex-preferred-size: 50%; 
+    flex-basis: 50%; 
+  }
+
   .results .temprature { font-size: 50px; }
   .temprature figure { max-width: 70px;}
   .city { font-size: 15px; }
@@ -871,7 +938,11 @@ footer .icon:hover:before{
 
 @media only screen and (max-width: 480px) {
 
-  .brand { -ms-flex-preferred-size: 60%; flex-basis: 60%; }
+  .brand { 
+    -ms-flex-preferred-size: 60%; 
+    flex-basis: 60%; 
+  }
+
   .results .temprature { font-size: 50px; }
   .temprature figure { max-width: 70px; }
 
