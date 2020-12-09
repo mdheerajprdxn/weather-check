@@ -84,7 +84,7 @@ sub { bottom: -.25em; }
 /*for all*/
 body {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a { 
@@ -149,7 +149,7 @@ header .wrapper {
   display: flex;
   -ms-flex-flow: column;
       flex-flow: column;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .brand-name .subtext {
@@ -328,7 +328,7 @@ ul.results>li {
 .results .temprature {
   color: #fff;
   font-size: 100px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .temprature figure {
@@ -448,7 +448,7 @@ ul.results>li {
 
 .info-item-content h3 {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .info-item-content * { margin-bottom: 10px; }
@@ -494,7 +494,7 @@ ul.results>li {
   margin: 20px 0;
   position: relative;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
 }
