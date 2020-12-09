@@ -43,24 +43,26 @@ $("document").ready(function () {
 
   // use the data object passed from search function and set it to display
   function setData(data) {
+    console.log(data);
     let city = data.name;
     let temp = data.main.temp;
+    let deg = data.wind.deg;
     let direction = getDirection(data.wind.deg);
     let windSpeed = (data.wind.speed * 60 * 60) / 1000;
     windSpeed = windSpeed.toFixed(2);
-    let clouds = data.clouds.all;
+    let rain = data.main.humidity;
 
     fields.city.innerText = city;
     fields.temp.innerHTML = temp + "&#xb0;C";
-    fields.rain.innerText = clouds;
+    fields.rain.innerText = rain;
     fields.wind.innerText = windSpeed;
-    fields.direction.innerText = direction;
+    fields.direction.innerHTML = deg + "&#xb0; (" + direction + ")";
 
     let date = getDate();
     fields.day.innerText = date.day;
     fields.date.innerText = date.date;
 
-    let icon = setIcon(data.weather[0].icon);
+    let icon = setIcon(data.weather[0].main);
     fields.icon.attr("src", "assets/images/icons/" + icon + ".svg");
   }
 
@@ -133,37 +135,32 @@ $("document").ready(function () {
     return dateObj;
   }
 
-  //Set icon to filename according to icon code returned by API
+  //Set icon to filename according to weather main returned by API
   function setIcon(code) {
-    let slicedCode = code.slice(0, 2);
     let x;
-    switch (slicedCode) {
-      case "01":
-        x = "icon-2";
+    switch (code.toLowerCase()) {
+      case "drizzle":
+        x = "icon-13";
         break;
-      case "02":
-        x = "icon-3";
-        break;
-      case "03":
-        x = "icon-5";
-        break;
-      case "04":
-        x = "icon-6";
-        break;
-      case "09":
-        x = "icon-2";
-        break;
-      case "10":
-        x = "icon-4";
-        break;
-      case "11":
+      case "thunderstrom":
         x = "icon-12";
         break;
-      case "13":
-        x = "icon-8";
+      case "rain":
+        x = "icon-14";
         break;
-      case "50":
-        x = "icon-8";
+      case "clear":
+        x = "icon-1";
+        break;
+      case "broken clouds":
+        x = "icon-3";
+        break;
+      case "clouds":
+        x = "icon-5";
+        break;
+      case "smoke":
+      case "mist":
+      case "haze":
+        x = "icon-7";
         break;
       default:
         x = "icon-1";
