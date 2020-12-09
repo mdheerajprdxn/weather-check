@@ -17,12 +17,14 @@ $("document").ready(function () {
   fields.date = $(".date")[0];
   fields.icon = $("#weather-icon");
 
+  let searchField = $(this).find("#search");
   //Initial search after page load
-  search("mumbai");
+  if (searchField.length > 0) {
+    search("mumbai");
+  }
 
   $(".search-form").submit(async function (e) {
     e.preventDefault();
-    let searchField = $(this).find("#search");
     let searchTerm = searchField[0].value;
     search(searchTerm);
     searchField[0].value = "";
